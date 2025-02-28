@@ -1,0 +1,190 @@
+/* =============== Start: Monochromatic Blue Color Scheme =============== */
+:root {
+    --blue-dark: #1E5BB6;
+    --blue-light: #cae8ff;
+    --blue-darker: #242C36;
+    --text-color: #ffffff;
+    --background-color: #ffffff;
+}
+/* =============== End: Monochromatic Blue Color Scheme =============== */
+
+/* =============== Start: Default Style =============== */
+* {
+    font-family: "Nunito", serif;;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+  
+body {
+    font-size: 1rem;
+    line-height: 1.5;    
+    margin: 0;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =============== End: Default Style =============== */
+/* =============== Start: Widget =============== */
+.widget {
+    background-color: var(--blue-dark);
+    max-width: 45rem;
+    border-radius: 10px;
+    width: 100%;
+    padding: 40px 40px 20px;
+}
+
+.basket-icon img {
+    max-width: 190px;
+    width: 100%;
+}
+
+.masthead {
+    text-align: center;
+}
+
+.masthead-heading {
+	font-size: 2rem;
+	font-weight: 800;
+	margin: 25px 0 30px;
+	color: var(--text-color);
+    line-height: 1;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+	color: var(--text-color);
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 20px 0 0;
+}
+
+.form-input {
+    height: 42px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--background-color);
+}
+
+.form-button {
+    height: 42px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--blue-light);
+    color: var(--blue-darker);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-button:hover {    
+    opacity: 0.8;
+}
+
+.feedback.active {
+    display: none;
+}
+
+.feedback.active {
+	background: #ffc8c8;
+	color: #d70000;
+	padding: 12px 20px;
+	margin-top: 20px;
+	border-radius: 4px;
+    display: block;
+}
+
+.footer {
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+.footer-heading {
+	font-size: 1rem;
+	text-align: center;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.footer-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.footer-icon:hover {
+    opacity: 0.8;
+}
+
+.grocery-items {
+    margin-top: 40px;
+}
+
+.grocery-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--blue-light);
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.grocery-items li::before {
+	content: "\f054";
+	margin-right: 10px;
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+}
+
+@media only screen and (min-width: 35rem) {
+    .masthead-heading {
+        font-size: 3rem;
+    }
+    .tagline {
+        font-size: 1.2rem;
+    }
+}
+/* =============== End: Widget =============== */
